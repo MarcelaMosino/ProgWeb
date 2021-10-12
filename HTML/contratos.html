@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style-contrata.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Los Rockeros</title>
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <nav class="nav-header">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+                <a href="../index.html">Inicio</a>
+                <a href="https://www.youtube.com/playlist?list=PL9Otx4UgkORdyYarnR607G9qvrbVfKv7L">Shows</a>
+                <a href="../index.html">Música original</a>
+                <a href="../HTML/videos.html">Videos</a>
+            </nav>
+            <div class="logo-banda">
+                <h1>Contrataciones</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h2 class=ref>Solicite cotización</h2>
+            <form class="container-contacto">
+                <div class="input-contacto"><label for="fecha-evento">Fecha del evento: </label>
+                    <input type="date" id="fecha-evento" placeholder="ejemplo@dominio.com" required>
+                </div>
+                <div class="input-contacto"><label for="contacto">Email de contacto: </label>
+                    <input type="email" id="email-contacto" placeholder="ejemplo@dominio.com" required>
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono-casa">Teléfono de casa: </label>
+                    <input type="tel" id="telefono-casa" placeholder="5551234567">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono-movil">Teléfono móvil: </label>
+                    <input type="tel" id="telefono-movil" placeholder="4771234567" required>
+                </div>
+                <div class="input-contacto"><label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios">Comente con confianza
+                        </textarea>
+                </div>
+                <h2 class="ref">Sobre el evento</h2>
+                <div class="input-contacto"><label for="horas">Horas del show: </label>
+                    <input type="number" id="horas" placeholder="3" min="3" required>
+                </div>
+                <div class="input-contacto"><label>Tipo de escenario:</label>
+                    <p>
+                        <input type="radio" name="esc-tipo" value="abierto" id="es-1"><label for="es-1">Espacio abierto
+                            / Jardín</label>
+                    </p>
+                    <p> <input type="radio" name="esc-tipo" values="cerrado" id="es-2"><label for="es-2">Escenario con
+                            techo</label>
+
+                    </p>
+                </div>
+                <div class="input-contacto"><label for="contacto">Email de contacto:</label>
+                    <input type="email" id="email-contacto" placeholder="ejemplo@dominio.com">
+                </div>
+                <label for=""></label>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contacto">
+            <form class="container-contacto">
+                <div class="input-contacto"><label for="contacto">Email de contacto:</label>
+                    <input type="email" id="email-contacto" placeholder="ejemplo@dominio.com">
+                </div>
+                <div class="input-contacto"><label for="fecha">Fecha de evento</label>
+                    <input type="date" id="fecha">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono-casa">Teléfono de casa</label>
+                    <input type="tel" id="telefono-casa" placeholder="5551234567">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono-movil">Teléfono móvil</label>
+                    <input type="tel" id="telefono-movil" placeholder="4771234567">
+                </div>
+                <div class="input-contacto"><label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios">Comente con confianza
+                        </textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+        <nav class="nav-footer">
+            <div class="redes">
+                <a href="https://www.instagram.com/mosinomarcela/">Instagram</a>
+                <a href="https://www.facebook.com/marcela.salas.752/">Facebook</a>
+                <a href="https://chat.whatsapp.com/K4w11pVMov3Gk7i3kf9UnL">WhatsApp</a>
+            </div>
+            <div class="enlaces-footer"></div>
+        </nav>
+    </footer>
+</body>
+
+</html>
