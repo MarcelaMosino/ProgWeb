@@ -1,0 +1,273 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size: 20px;
+    width:100%;
+    height:3000px;
+}
+
+#header{
+    display:flex;
+    height: 25%;
+    position: relative;
+}
+    #header div{
+        background-image: url("../Media/singer.jpg");
+        background-size:cover;
+        display: flex;
+        width: 100%;
+        flex-flow: column;
+        position: relative;
+    }
+        .logo-banda{
+            width: 100%;
+            height: 6%;
+            top: 6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            letter-spacing: 13px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .nav-header{
+            position: fixed;
+            top: 0px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            width: 100%;
+            height: 6%;
+            color:white;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900;
+            background-color: black;
+        }
+            nav a, svg{
+                margin-right: 10%;
+                margin-top: 10px;
+                text-decoration: none;
+                color:white;
+            }
+            nav a:last-of-type{
+                margin-right: 0;
+            }
+            nav svg{
+                position:absolute;
+                left: 5%;
+            }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 0px;
+            width: 20em;
+            height: 4em;
+            position:absolute;
+            top:4em;
+            text-align: center;
+            background-color: white;
+            filter: opacity(40%);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .link-yt{
+            text-decoration: none;
+            position: absolute;
+            top:4.6em;
+            padding: 10px 30px;
+            font-weight: 700;
+            color:white;
+            font-size: 2em;
+            height: 60px;
+            width: auto;
+        }
+main{
+    background-color: rgb(223, 223, 223);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+    .contain-tour{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 50%;
+    }
+        .tour-info{
+            letter-spacing: 50px;
+            writing-mode: vertical-lr;
+            text-orientation:glyph-orientation-vertical;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5em;
+            opacity: .3;
+            margin-left: 1em;
+        }
+        .container-tour{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+            .table{
+                width: 70%;
+                height: 50%;
+            }
+                .fecha{
+                    font-family: 'Nunito', sans-serif;
+                    letter-spacing: .2px;
+                    font-weight: 100;
+                }
+                .lugares{
+                    font-weight: 900;
+                }
+    #discografia{
+        background-color: rgb(223, 223, 223);
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .ref{
+            text-align: center;
+            color: rgb(138, 137, 137);
+            letter-spacing: 15px;
+            margin: .5em 0em .5em 0em;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-family: 'Nunito', sans-serif;
+        }
+        .container-discos{
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }            
+            .disco{
+                border-bottom: 1px solid gray ;
+                margin: 2em 3em 0em;
+                height: 10em;
+                width: 10em;
+                background-size: cover;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                font-family: 'Nunito', sans-serif;
+                text-shadow: 1px 1px 2px black;
+                font-size: 1.2em;
+            }
+            .disco a{
+                text-decoration: none;
+                color: white;
+            }
+            #disco1{
+                background-image: url("../Media/disco1.jpg");
+            }
+            #disco2{
+                background-image: url("../Media/disco2.jpg");
+            }
+            #disco3{
+                background-image: url("../Media/disco3.jpg");
+            }
+            #disco4{
+                background-image: url("../Media/disco4.jpg");
+            }
+footer{
+    background-image: url("../Media/audience.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 25%;
+}
+    #contacto{
+        width: 100%;
+        height: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: left;
+    }
+        .container-contacto{
+            background-color:rgba(255, 255, 255, 0.3);
+            width: 40em;
+            height: 90%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-end;
+            margin: 2em;
+            border:none;
+        }
+            .input-contacto{
+                color: white;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                line-height: 5em;
+            }
+            input{
+                background-color: transparent;
+                border:none;
+                border-bottom: 1px solid white;
+                width: 20em;
+                color: white;
+                font-size: inherit;
+            }
+            label{
+                margin-left: 15px;
+            }
+            textarea{
+                background-color: transparent;
+                width: 20em;
+                height: 3em;
+                color: white;
+                font-size: inherit;
+            }
+            input::placeholder{
+                color: white;
+            }
+            button{
+                background-color: transparent;
+                border: 2px solid white;
+                padding:1em 2em;
+                margin: 1em;
+                color:white;
+                font-weight: bold;
+                font-family: 'Nunito',sans-serif;
+                font-size: 1em;
+            }
+    .nav-footer{
+        width: 100%;
+        height: 6%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+        .redes{
+            background-color: black;
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            padding: 10px 40px;
+        }
+
+
+@media (max-width: 850px) {
+    .disco{
+        width: 5em;
+        height: 5em;
+    }
+}
